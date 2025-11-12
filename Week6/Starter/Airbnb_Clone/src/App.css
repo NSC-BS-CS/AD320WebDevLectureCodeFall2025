@@ -1,0 +1,212 @@
+/* “AI transparency: This chat translates 
+my Material UI styling rules into vanilla CSS 
+with AI assistance. 
+I reviewed and adjusted the results for accuracy and fit. */
+
+.App input {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+.App button {
+  margin: 3px;
+}
+.header-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: #1976d2; /* MUI blue */
+  color: white;
+  padding: 1rem;
+}
+
+.header-banner .header-icon {
+  font-size: 1.5rem;
+}
+
+.header-banner h1 {
+  font-size: 1.8rem;
+  margin: 0;
+  letter-spacing: 2px;
+}
+.rental-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 345px;
+  background-color: #fff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.rental-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Header */
+.rental-card-header {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.rental-card-header h3 {
+  font-size: 1.1rem;
+  margin: 0;
+  color: #333;
+}
+
+.rental-card-header p {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0.25rem 0 0;
+}
+
+/* Image */
+.rental-card img {
+  object-fit: cover;
+  width: 100%;
+  height: 180px;
+}
+
+/* Content */
+.rental-card-content {
+  padding: 1rem;
+  flex-grow: 1;
+}
+
+.rental-card-content p {
+  margin: 0.25rem 0;
+  color: #444;
+}
+
+.rental-card-content p:first-child {
+  font-weight: bold;
+  color: #1976d2; /* MUI primary blue */
+}
+
+/* Actions */
+.rental-card-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  border-top: 1px solid #f0f0f0;
+}
+
+.rental-card-buttons button {
+  margin-right: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #1976d2;
+  color: white;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: background-color 0.2s ease;
+}
+
+.rental-card-buttons button:hover {
+  background-color: #1565c0;
+}
+
+/* Icons */
+.rental-card-icons span {
+  margin-left: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #757575;
+  transition: color 0.2s ease;
+}
+
+.rental-card-icons span:hover {
+  color: #1976d2;
+}
+
+.rentals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+  padding: 1rem;
+}
+
+.rental-item {
+  width: 100%;
+  max-width: 345px;
+}
+
+.rentals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+  padding: 1rem;
+}
+
+.rental-item {
+  width: 100%;
+  max-width: 345px;
+}
+
+form {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  font-family: "Cabin", "Helvetica", "Arial", sans-serif;
+}
+
+h2 {
+  text-align: center;
+  color: #1976d2;
+  margin-bottom: 1rem;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+input,
+select {
+  margin-top: 0.25rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+input:focus,
+select:focus {
+  border-color: #1976d2;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(25, 118, 210, 0.2);
+}
+
+button {
+  display: block;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 0 auto;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #1565c0;
+}
