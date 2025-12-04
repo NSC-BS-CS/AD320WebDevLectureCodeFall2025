@@ -14,7 +14,7 @@
 
 ## MVC
 
-![MVC](/assets/MVC.png)
+![MVC](./assets/MVC.png)
 
 As our applications grow in size and functionality, we need to start separating our code into specific roles. We have a little of that already with our frontend client and our backend server.
 
@@ -197,6 +197,39 @@ start();
 
 Sequalize has a CLI tool that can help make this process a little easier
 Install `npm install --save-dev sequelize-cli`
+
+### Requirements
+
+1. **Configure Sequelize**
+
+   - Install the necessary packages
+   - Create a `db.js` file that exports a configured Sequelize instance
+   - Connect to a SQLite database file
+
+2. **Create an `Animal` model**
+
+   - Put this in a `models` folder
+   - Your `Animal` table must have at least:
+     - `name` (string)
+     - `species` (string)
+     - `age` (number)
+   - You may add more fields if you want
+
+3. **Sync your database in index.js**  
+   Make sure your server waits for the database to connect and your models to sync before starting.
+
+4. **Create a controller (router)**
+   Create a route that returns **all animals** from the database
+
+5. **Test your endpoint**
+
+   - Visit the route in the browser or Postman
+   - Confirm that the route returns an empty array
+
+6. **Seed your database**
+
+- Your seed.js file contains the data for your initial records.
+- To run it, use: node server/seed.js, this should work but there may be some minor debugging.
 
 **AI Transparency Note:**  
 All content was written by the instructor. AI was used only to clean up grammar, improve clarity, and format the material.
